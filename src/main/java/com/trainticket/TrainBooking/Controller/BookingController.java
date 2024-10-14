@@ -35,7 +35,7 @@ public class BookingController {
         // Pass the passengers list as well if needed
         List<Book> passengers = (List<Book>) session.getAttribute("passengers");
         model.addAttribute("passengers", passengers);
-
+        System.out.println("Hello World!");
         return "bookingForm";
     }
     
